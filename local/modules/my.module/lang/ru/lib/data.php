@@ -1,0 +1,5 @@
+<?
+$MESS['MM_DATA_ENTITY_ID_FIELD'] = 'ID';
+$MESS['MM_DATA_ENTITY_TITLE_FIELD'] = 'Заголовок';
+$MESS['MM_DATA_ENTITY_SORT_FIELD'] = 'Сортировка';
+$MESS['MM_DATA_ENTITY_CREATED_FIELD'] = 'Дата создания';

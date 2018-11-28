@@ -1,0 +1,1 @@
+<?CJSCore::Init(array("ajax"));?>

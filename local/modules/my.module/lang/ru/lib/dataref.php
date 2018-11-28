@@ -1,0 +1,4 @@
+<?
+$MESS['MM_TABLE_ENTITY_ID_FIELD'] = 'ID';
+$MESS['MM_TABLE_ENTITY_NAME_FIELD'] = 'Название';
+$MESS['MM_TABLE_ENTITY_REF_FIELD'] = 'Ссылка';
