@@ -1,2 +1,2 @@
 <?
-$MESS["FAVORITES_TITLE"]="Избранное";
+$MESS['FAVORITES_TITLE']='Избранное';

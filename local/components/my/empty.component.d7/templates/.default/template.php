@@ -2,29 +2,20 @@
 
 use Bitrix\Main\Localization\Loc;
 
-if (!empty($arResult['SECTIONS']))
+if (!empty($arResult['ITEMS']))
 {
 
     ?>
-    <div class="catalog-menu">
-        <div class="title">
-            <span><?=Loc::getMessage('MFA_NAME_CATEGORY')?></span>
-            <b><?=$arResult['COUNT_PRODUCTS']?></b>
-        </div>
-        <ul>
-			<? 
-			foreach ($arResult['SECTIONS'] as $arrSection)
+    <div class="catalog">
+            <?=Loc::getMessage('MFA_NAME_CATEGORY')?>
+			<?
+			foreach ($arResult['ITEMS'] as $arrSection)
 			{
-				?>
-                <li <?if(!empty($arrSection['SELECTED']))echo'class="active"';?>>
-                    <a href="<?= $arrSection['FILTER_URL'] ?>">
-                        <span><?= truncateText($arrSection['NAME'], 60) ?></span><?= (!empty($arrSection['COUNT_ITEMS']) ? '<b>' . $arrSection['COUNT_ITEMS'] . '</b>' : '') ?>
-                    </a>
-                </li>
-				<?
+                ?>
+
+                <?
 			} ?>
 
-        </ul>
     </div>
 	<?
 } ?>

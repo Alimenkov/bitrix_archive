@@ -1,20 +1,22 @@
 <?
 if (!defined('B_PROLOG_INCLUDED') || B_PROLOG_INCLUDED !== true) die();
 
-use Bitrix\Main\Loader,
-	Bitrix\Main\Localization\Loc,
-	Bitrix\Main\Application,
-	Bitrix\Main\Web\Uri;
+if (!defined('B_PROLOG_INCLUDED') || B_PROLOG_INCLUDED !== true) die();
 
-class MessagesToIblock extends CBitrixComponent
+use Bitrix\Main\Application;
+use Bitrix\Main\Loader;
+use Bitrix\Main\Localization\Loc;
+use Bitrix\Main\Web\Uri;
+
+class MessagesToIblock extends \CBitrixComponent
 {
 
-	protected $objRequest;
+    protected $objRequest;
 
-	public function onPrepareComponentParams($arParams)
-	{
+    public function onPrepareComponentParams($arParams)
+    {
 
-		if (!empty($arParams['IBLOCK_ID'])) $arParams['IBLOCK_ID'] = IntVal($arParams['IBLOCK_ID']);
+        if (!empty($arParams['IBLOCK_ID'])) $arParams['IBLOCK_ID'] = IntVal($arParams['IBLOCK_ID']);
 
 		if (!empty($arParams['EMAIL'])) $arParams['EMAIL'] = trim($arParams['EMAIL']);
 

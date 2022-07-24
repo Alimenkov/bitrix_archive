@@ -1,3 +1,3 @@
 <?
-$MESS['MFA_NAME_CATEGORY'] = 'Название категории';
+$MESS['MFA_NAME_CATEGORY'] = 'Название';
 
